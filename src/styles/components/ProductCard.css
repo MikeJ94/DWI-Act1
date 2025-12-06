@@ -29,7 +29,7 @@
     /* El color lo da Bootstrap (text-success) */
 }
 
-/* 🖱️ ESTILOS SOLICITADOS: ELEMENTO BEM: .product-card__link */
+/* ESTILOS SOLICITADOS: ELEMENTO BEM: .product-card__link */
 .product-card__link {
     /* El color por defecto será el de Bootstrap (primary), aquí podemos ajustarlo */
     font-weight: 500;
@@ -39,7 +39,7 @@
     color: #0056b3; /* Un azul más oscuro al pasar el mouse */
 }
 
-/* 🖱️ ESTILOS SOLICITADOS: ELEMENTO BEM: .product-card__button */
+/* ESTILOS SOLICITADOS: ELEMENTO BEM: .product-card__button */
 /* El estilo base ya está dado por btn-primary de Bootstrap */
 .product-card__button {
     /* Si necesitamos un padding o font-size BEM customizado, va aquí */
