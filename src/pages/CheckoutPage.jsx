@@ -1,7 +1,7 @@
 // src/pages/CheckoutPage.jsx
 
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // 💡 Importar useNavigate
+import { Link, useNavigate } from 'react-router-dom'; //Importar useNavigate
 import { useCart } from '../context/CartContext';
 import InputField from '../components/InputField';
 import FormSection from '../components/FormSection';
@@ -15,10 +15,10 @@ function CheckoutPage() {
     removeFromCart,
     addToCart,
     deleteItem,
-    clearCart       // 💡 Importar clearCart
+    clearCart       //Importar clearCart
   } = useCart();
 
-  const navigate = useNavigate(); // 💡 Inicializar useNavigate
+  const navigate = useNavigate(); //Inicializar useNavigate
 
   // Estado del formulario (se mantiene igual)
   const [formData, setFormData] = useState({
@@ -40,7 +40,7 @@ function CheckoutPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // 💡 Validación de Carrito: Si está vacío, detenemos la función (Aunque el botón está deshabilitado, es una buena práctica de seguridad).
+    //Validación de Carrito: Si está vacío, detenemos la función (Aunque el botón está deshabilitado, es una buena práctica de seguridad).
     if (cartItems.length === 0) {
       console.warn("Intento de envío de formulario con carrito vacío.");
       return;
@@ -49,10 +49,10 @@ function CheckoutPage() {
     // 1. Lógica de Procesamiento (simulada)
     console.log('Datos del formulario:', formData);
 
-    // 2. 💡 VACIAR CARRITO
+    // 2. VACIAR CARRITO
     clearCart();
 
-    // 3. 💡 REDIRECCIÓN a una página de agradecimiento
+    // 3. REDIRECCIÓN a una página de agradecimiento
     // Creamos la ruta '/gracias' para esta redirección.
     navigate('/gracias');
 
