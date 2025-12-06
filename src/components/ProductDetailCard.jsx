@@ -3,7 +3,7 @@
 import React, { useState } from 'react'; // Eliminamos useEffect, ya que no se usa
 import { useParams, Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
-import { toast } from 'react-toastify'; // 💡 Importar toast
+import { toast } from 'react-toastify'; // Importar toast
 // Importación por defecto (asumiendo que mockProducts.js usa 'export default')
 import mockProducts from '../data/mockProducts';
 
@@ -11,10 +11,10 @@ function ProductDetail() {
   const { id } = useParams();
   const { addToCart } = useCart();
 
-  // 💡 Estado local para la cantidad seleccionada
+  //Estado local para la cantidad seleccionada
   const [quantity, setQuantity] = useState(1);
 
-  // 🔍 Buscar el producto usando la lista importada
+  //Buscar el producto usando la lista importada
   const product = mockProducts.find(p => p.id === parseInt(id));
 
   // --- Manejadores de Cantidad ---
@@ -39,10 +39,10 @@ function ProductDetail() {
   }
 
   const handleAddToCart = () => {
-    // 🛒 Añadir la cantidad seleccionada al Contexto del Carrito
+    //Añadir la cantidad seleccionada al Contexto del Carrito
     addToCart(product, quantity);
 
-    // 💡 MOSTRAR TOAST: Mensaje de éxito
+    //MOSTRAR TOAST: Mensaje de éxito
     toast.success(`${quantity} unidad(es) de ${product.name} agregada(s).`, {
       toastId: product.id, // Previene duplicados si se hace clic muy rápido
     });
@@ -124,7 +124,7 @@ function ProductDetail() {
 
             {/* 2. BOTÓN AÑADIR (Línea separada para darle ancho completo) */}
             <button
-              className="btn btn-success btn-lg w-100" // 💡 w-100: Ocupa el 100% del ancho
+              className="btn btn-success btn-lg w-100" // w-100: Ocupa el 100% del ancho
               onClick={handleAddToCart}
             >
               Añadir al Carrito
