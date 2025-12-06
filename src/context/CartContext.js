@@ -72,10 +72,10 @@ export const CartProvider = ({ children }) => {
     cartItems, // Lista de productos
     addToCart, // Función para añadir
     removeFromCart, // Función para disminuir
-    deleteItem, // 💡 FUNCIÓN AGREGADA
-    clearCart,  // 💡 Exportar la nueva función
+    deleteItem, // FUNCIÓN AGREGADA
+    clearCart,  // Exportar la nueva función
     cartTotal, // Subtotal del carrito
-    cartCount: totalQuantity, // 💡 CAMBIO: Usamos totalQuantity (unidades)
+    cartCount: totalQuantity, // CAMBIO: Usamos totalQuantity (unidades)
   };
 
   return (
