@@ -4,13 +4,13 @@ import React from 'react';
 import useProducts from '../hooks/useProducts'; // 1. Importar el Custom Hook
 import SearchBar from '../components/SearchBar';
 import ProductCard from '../components/ProductCard';
-import { useCart } from '../context/CartContext'; // 💡 Importar el Custom Hook del Carrito
+import { useCart } from '../context/CartContext'; //  Importar el Custom Hook del Carrito
 
 function HomePage() {
   // 2. Usar el hook para obtener los datos y la lógica de búsqueda
   const { products, searchTerm, handleSearchChange } = useProducts();
 
-  // 💡 OBTENER LA FUNCIÓN DEL CONTEXTO: Necesaria para pasarla a ProductCard
+  // OBTENER LA FUNCIÓN DEL CONTEXTO: Necesaria para pasarla a ProductCard
   const { addToCart } = useCart();
 
   return (
@@ -31,7 +31,7 @@ function HomePage() {
           products.map(product => (
 
             <div key={product.id} className="col-12 col-md-6 col-lg-4 mb-4">
-              {/* 💡 CORRECCIÓN: Pasar la función addToCart como prop */}
+              {/* CORRECCIÓN: Pasar la función addToCart como prop */}
               <ProductCard product={product} addToCart={addToCart} />
             </div>
           ))
