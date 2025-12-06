@@ -11,19 +11,19 @@ function ProductCard({ product }) {
     // Usamos el hook para obtener la función addToCart
     const { addToCart } = useCart();
 
-    // 💡 FUNCIÓN CORREGIDA: Ahora el toast solo se dispara con el CLIC
+    //FUNCIÓN CORREGIDA: Ahora el toast solo se dispara con el CLIC
     const handleAddToCart = (e) => {
         e.stopPropagation(); // Evita navegar si el card es un enlace
         addToCart(product, 1); // Añade 1 unidad por defecto
 
-        // 🟢 MOVIMIENTO CLAVE: El toast DEBE estar dentro del manejador de eventos
+        //MOVIMIENTO CLAVE: El toast DEBE estar dentro del manejador de eventos
         toast.info(`${product.name} añadido al carrito.`, {
             toastId: product.id,
             position: "bottom-right", // Aseguramos la posición definida en App.js
         });
     };
 
-    // ❌ ELIMINADO: La llamada al toast que estaba aquí se ha movido a handleAddToCart
+    //ELIMINADO: La llamada al toast que estaba aquí se ha movido a handleAddToCart
 
     return (
         // Uso de clases BEM y Bootstrap (card shadow-sm)
