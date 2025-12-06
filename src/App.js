@@ -6,7 +6,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import CartModal from './components/CartModal'; // 💡 CORRECCIÓN 1: Descomentar e importar CartModal
+import CartModal from './components/CartModal'; // CORRECCIÓN 1: Descomentar e importar CartModal
 import { CartProvider } from './context/CartContext';
 
 // Importación de las Páginas
@@ -33,7 +33,7 @@ function App() {
           isCartModalOpen={isCartModalOpen}
         />
 
-        {/* ⚠️ CLASE DE SOLUCIÓN: Agregamos app-content para aplicar el padding-top CSS */}
+        {/* CLASE DE SOLUCIÓN: Agregamos app-content para aplicar el padding-top CSS */}
         <main className="app-content flex-grow-1 pt-5">
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -50,7 +50,7 @@ function App() {
 
         <Footer />
 
-        {/* 💡 CORRECCIÓN 2 y 3: Usamos el componente CartModal con las props correctas */}
+        {/* CORRECCIÓN 2 y 3: Usamos el componente CartModal con las props correctas */}
         <CartModal
           isOpen={isCartModalOpen}
           onClose={toggleCartModal}
