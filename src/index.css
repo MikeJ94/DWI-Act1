@@ -2,7 +2,7 @@
 
 /* Bloque del contenido principal */
 .app-content {
-    /* ⚠️ ELIMINAMOS CUALQUIER MARGIN O PADDING SUPERIOR CONFLICTIVO */
+    /* ELIMINAMOS CUALQUIER MARGIN O PADDING SUPERIOR CONFLICTIVO */
     margin-top: 0 !important; 
     padding-top: 0 !important; 
     border-top: none !important;
