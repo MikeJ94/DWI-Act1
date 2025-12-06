@@ -1,0 +1,32 @@
+/* src/styles/pages/ReturnsPage.css */
+
+/* BLOQUE BEM: .return-form */
+.return-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ELEMENTO BEM: .return-form__label */
+.return-form__label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #495057;
+}
+
+/* ELEMENTO BEM: .return-form__input */
+/* La clase form-control de Bootstrap se encarga del estilo base */
+.return-form__input {
+    width: 100%;
+}
+
+/* ELEMENTO BEM MODIFICADOR: .return-form__button--submit */
+.return-form__button--submit {
+    /* Ajustes específicos si se necesitan */
+    font-weight: bold;
+}

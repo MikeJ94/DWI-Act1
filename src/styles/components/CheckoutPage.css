@@ -1,0 +1,39 @@
+/* src/styles/pages/CheckoutPage.css */
+
+/* BLOQUE BEM: .checkout-form */
+.checkout-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #dee2e6; /* Borde suave de Bootstrap */
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ELEMENTO BEM: .checkout-form__group */
+.checkout-form__group {
+    margin-bottom: 1rem;
+}
+
+/* ELEMENTO BEM: .checkout-form__label */
+.checkout-form__label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #495057;
+}
+
+/* ELEMENTO BEM: .checkout-form__input */
+/* El estilo principal lo da Bootstrap con .form-control */
+.checkout-form__input {
+    width: 100%;
+    /* Estilos personalizados si fueran necesarios */
+}
+
+/* ELEMENTO BEM MODIFICADOR: .checkout-form__button--primary */
+.checkout-form__button--primary {
+    /* El color lo dará Bootstrap (btn-success), esto es para ajustes específicos */
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}

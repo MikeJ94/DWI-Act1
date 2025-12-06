@@ -1,0 +1,47 @@
+/* src/styles/components/ProductCard.css */
+
+/* BLOQUE BEM: .product-card */
+.product-card {
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura en el grid */
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+}
+
+/* ELEMENTO BEM: .product-card__image */
+.product-card__image {
+    max-height: 200px;
+    object-fit: contain; /* Asegura que la imagen se ajuste sin cortarse */
+    padding: 10px;
+}
+
+/* ELEMENTO BEM: .product-card__title */
+.product-card__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* ELEMENTO BEM: .product-card__price */
+.product-card__price {
+    font-size: 1.4em;
+    /* El color lo da Bootstrap (text-success) */
+}
+
+/* 🖱️ ESTILOS SOLICITADOS: ELEMENTO BEM: .product-card__link */
+.product-card__link {
+    /* El color por defecto será el de Bootstrap (primary), aquí podemos ajustarlo */
+    font-weight: 500;
+}
+
+.product-card__link:hover {
+    color: #0056b3; /* Un azul más oscuro al pasar el mouse */
+}
+
+/* 🖱️ ESTILOS SOLICITADOS: ELEMENTO BEM: .product-card__button */
+/* El estilo base ya está dado por btn-primary de Bootstrap */
+.product-card__button {
+    /* Si necesitamos un padding o font-size BEM customizado, va aquí */
+    min-width: 80px;
+}

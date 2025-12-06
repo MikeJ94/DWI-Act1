@@ -1,0 +1,43 @@
+/* src/styles/components/Footer.css */
+
+/* BLOQUE: .footer (Estilos de alto nivel si fueran necesarios) */
+
+
+/* ELEMENTO: Enlaces (aplicando el efecto hover) */
+.footer__link {
+    /* Transición suave para el hover */
+    transition: color 0.3s ease;
+}
+
+/* MODIFICADOR de hover usando variables de Bootstrap (si están disponibles) */
+.footer__link:hover {
+    color: var(--bs-primary) !important; /* Resalta con el color primario de Bootstrap */
+}
+
+/* ELEMENTO: Iconos Sociales */
+.footer__social-icon {
+    /* Transición suave para los iconos */
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block; /* Necesario para la transformación */
+}
+
+.footer__social-icon:hover {
+    color: var(--bs-primary) !important;
+    transform: scale(1.15); /* Efecto de zoom */
+}
+
+/* ELEMENTO: Títulos (opcional, para darle más grosor o separación) */
+.footer__title {
+    letter-spacing: 0.5px;
+}
+
+/* ELEMENTO: Texto de Copyright (opcional) */
+.footer__copyright {
+    font-size: 0.9rem;
+}
+
+/* ELEMENTO: Ítems de contacto */
+.footer__contact-item {
+    /* Asegura que los ítems de contacto tengan el color del texto secundario de Bootstrap */
+    color: var(--bs-secondary) !important;
+}

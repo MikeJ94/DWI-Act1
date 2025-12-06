@@ -1,0 +1,28 @@
+/* src/styles/components/SearchBar.css */
+
+/* BLOQUE BEM: .search-bar */
+.search-bar {
+    /* Define el ancho máximo para que la barra no sea demasiado ancha en desktops */
+    max-width: 600px; 
+    padding: 10px 0;
+}
+
+/* ELEMENTO BEM: .search-bar__input */
+/* El estilo lo maneja mayormente Bootstrap (.form-control) */
+.search-bar__input {
+    font-size: 1rem;
+    height: calc(1.5em + 1rem + 2px); /* Mismo height que Bootstrap 5 */
+}
+
+/* ELEMENTO BEM: .search-bar__button */
+/* El estilo lo maneja mayormente Bootstrap (.btn .btn-primary) */
+.search-bar__button {
+    font-weight: bold;
+    /* Ajuste de padding para alinear con el input */
+    padding: 0.5rem 1rem; 
+}
+
+/* Opcional: Estilo al ícono */
+.search-bar__button .bi-search {
+    margin-right: 5px;
+}

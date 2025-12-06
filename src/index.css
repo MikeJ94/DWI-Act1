@@ -1,0 +1,30 @@
+/* src/index.css */
+
+/* Bloque del contenido principal */
+.app-content {
+    /* ⚠️ ELIMINAMOS CUALQUIER MARGIN O PADDING SUPERIOR CONFLICTIVO */
+    margin-top: 0 !important; 
+    padding-top: 0 !important; 
+    border-top: none !important;
+    
+    flex-grow: 1; 
+    overflow-x: hidden; 
+}
+
+body {
+  /* Altura del Header (64px) + margen de seguridad (11px) */
+  padding-top: 75px !important; 
+  margin: 0;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+

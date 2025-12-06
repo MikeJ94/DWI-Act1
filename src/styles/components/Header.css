@@ -1,0 +1,61 @@
+/* src/styles/components/Header.css */
+
+/* BLOQUE BEM: .header */
+.header {
+    /* 1. QUE QUEDE FIJO AL HACER SCROLL */
+
+    /*margin-bottom: 0 !important; /* Forzamos a que no haya margen inferior */
+    /*position: fixed; 
+    top: 0;*/
+    width: 100%; 
+    z-index: 1030; /* Es fundamental para que quede encima de todo el contenido */
+
+    margin-bottom: 0 !important;
+    
+    /* Estilos de layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #282c34; 
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra para destacarlo */
+}
+
+/* Elemento BEM: .header__logo */
+.header__logo-link {
+    font-size: 1.6em; 
+    font-weight: bold;
+    color: #a8c9e1;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/* Elemento BEM: .header__nav ... */
+.header__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Elemento BEM: .header__link */
+.header__link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px; /* Padding base */
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header__link:hover {
+    background-color: #444b58;
+}
+
+/* 3. ESTADO ACTIVE (Modificador BEM) */
+.header__link--active {
+    background-color: #007bff; /* Color primario de Bootstrap para destacar */
+    font-weight: bold;
+    color: white; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
