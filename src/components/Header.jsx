@@ -38,7 +38,7 @@ function Header() {
           <li className="header__item">
             <NavLink to="/returns" className={getNavLinkClass}>Devoluciones</NavLink>
           </li>
-          {/* 🛒 MODIFICACIÓN CLAVE: Enlace y Contador del Carrito */}
+          {/*MODIFICACIÓN CLAVE: Enlace y Contador del Carrito */}
           <li className="header__item">
             <NavLink to="/checkout" className="header__link header__link--cart">
                 🛒
