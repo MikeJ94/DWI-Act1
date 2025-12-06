@@ -1,14 +1,14 @@
 // src/components/Header.jsx
 
 import React from 'react';
-// 💡 CAMBIO CLAVE: Usamos NavLink en lugar de Link para el estado activo
+// CAMBIO CLAVE: Usamos NavLink en lugar de Link para el estado activo
 import { NavLink } from 'react-router-dom'; 
-// 💡 1. Importamos el Custom Hook
+// 1. Importamos el Custom Hook
 import { useCart } from '../context/CartContext';
 import '../styles/components/Header.css';
 
 function Header() {
-  // 💡 2. Usamos el hook para obtener el contador (totalQuantity)
+  // 2. Usamos el hook para obtener el contador (totalQuantity)
   const { cartCount } = useCart();
   
   // Función que NavLink usa para determinar la clase
