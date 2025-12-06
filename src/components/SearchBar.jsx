@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import '../styles/components/SearchBar.css'; // ⬅️ Importación de estilos BEM
+import '../styles/components/SearchBar.css'; // Importación de estilos BEM
 
 // El componente SearchBar recibe el 'searchTerm' y el 'handleSearchChange' del custom hook.
 // NOTA: La funcionalidad de 'handleSearchChange' maneja la búsqueda en tiempo real,
