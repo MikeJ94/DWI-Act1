@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify'; // 💡 Importar toast
+import { toast } from 'react-toastify'; // Importar toast
 
 function ReturnPage() {
     const navigate = useNavigate();
@@ -24,19 +24,19 @@ function ReturnPage() {
         // 1. Lógica de Envío de Solicitud (simulada)
         console.log('Solicitud de devolución enviada:', returnForm);
         
-        // 2. 💡 MOSTRAR TOAST: Mensaje de éxito
+        // 2. MOSTRAR TOAST: Mensaje de éxito
         toast.success(`Solicitud de devolución para Orden #${returnForm.orderId} enviada con éxito.`, {
              position: "top-center" 
         });
         
-        // 3. 💡 LIMPIAR CAMPOS
+        // 3. LIMPIAR CAMPOS
         setReturnForm({
             orderId: '',
             reason: '',
             comments: '',
         });
 
-        // 4. 💡 REDIRECCIÓN (opcional): Redirigir al inicio después de un breve retraso
+        // 4. REDIRECCIÓN (opcional): Redirigir al inicio después de un breve retraso
         setTimeout(() => {
             navigate('/');
         }, 3000); 
